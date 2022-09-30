@@ -10,5 +10,5 @@ let userDataInfo = 'User name: ' + firstVar + ',  User last name: ' + secondVar;
 document.writeln(userDataInfo);
 
 let lang = prompt('input lang: uk or ru');
-console.log(lang == 'uk');
+console.log(lang == 'uk' || lang == "Uk" || lang == 'uK');
 
