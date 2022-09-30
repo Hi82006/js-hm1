@@ -6,8 +6,11 @@ alert(eval(str))
 
 let firstVar = prompt('User name: ', 'введите имя');
 let secondVar = prompt('User last name:', 'введите фамилию');
-let userDataInfo = 'User name: ' + firstVar + ',  User last name: ' + secondVar;
-document.writeln(userDataInfo);
+let userDataInfo = `<div>
+                <h2>Имя: ${firstVar}</h2>
+                <h2>Фамилия: ${secondVar}</h2>
+            </div>`
+document.write(userDataInfo);
 
 let lang = prompt('input lang: uk or ru');
 console.log(lang == 'uk' || lang == "Uk" || lang == 'uK');
